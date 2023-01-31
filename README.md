@@ -1,6 +1,6 @@
 # Basic Rules Generator
 
-This is a very simple script to generate rules that will mark a set of countermeasures as required or implemented if a specific condition is met.
+This is a very simple script to generate rules that will mark a set of countermeasures as required or implemented if a component belongs to a specific trustzone.
 
 ## Disclaimer
 This software is provided to you "as-is" and without warranty of any kind, express, implied or otherwise, including without limitation, any warranty of fitness for a particular purpose. If possible, this tool should not be deployed in a cloud environment, the Internet, or any other public network, as it has been developed to run on localhost. Doing so is at the user's own risk.
@@ -33,6 +33,10 @@ The input can be both a simple txt/csv file containing the list of countermeasur
 
 <img src="documentation/1.png" width="400">
 <img src="documentation/2.png" width="400">
+
+To modify the trustzone you have two options:
+* Search for "aaaaaaaa-bbbb-cccc-dddd-eeeeffff0000_::_trust-zone" and change it with your own trustzone uuid + ref
+* Create the rules and find and replace aaaaaaaa-bbbb-cccc-dddd-eeeeffff0000_::_trust-zone on the library using a text editor
 
 In the following image you can see how rules should be pasted into the library file that will be uploaded to IriusRisk:
 
